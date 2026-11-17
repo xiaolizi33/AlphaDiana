@@ -1,0 +1,35 @@
+run_id: meta_n_zero_pilot
+agent:
+  name: meta_n
+  version: "0.1.0"
+  config:
+    model: deepseek-flash
+    api_base: https://api.deepseek.com
+    max_tokens: 2048
+    execution_timeout: 5
+    strategy_chain: []
+    budget_ledger: ../experiments/budget_reservations.jsonl
+    pilot_cap_cny: 1
+benchmark:
+  name: custom
+  config:
+    problems:
+      - id: pilot_arithmetic
+        problem: "What is 17 times 23?"
+        answer: "391"
+      - id: pilot_combinations
+        problem: "How many ways can you choose 3 students from a group of 10 students?"
+        answer: "120"
+      - id: pilot_remainder
+        problem: "What is the remainder when 7 to the power 100 is divided by 13?"
+        answer: "9"
+scorer:
+  name: numeric
+  config:
+    tolerance: 1.0e-6
+max_concurrent: 1
+num_samples: 1
+output_dir: ../experiments/zero_baseline
+metadata:
+  purpose: integration_pilot_only
+  formal_evaluation: false

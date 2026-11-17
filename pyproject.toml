@@ -17,6 +17,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+meta-n = ["meta-n @ git+https://github.com/minnesotanlp/meta-n.git@b7081843d3c7b0e0f418ca10aaf2ccbff856e7f8"]
+math = ["math-verify==0.8.0"]
 analysis = ["matplotlib>=3.7,<4", "scipy>=1.10"]
 judges = ["openai>=1.0", "requests>=2.28"]
 benchmarks = ["datasets>=2.0", "tomli>=2.0; python_version<'3.11'"]

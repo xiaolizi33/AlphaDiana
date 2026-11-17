@@ -14,6 +14,10 @@ AlphaDiana runs agents on benchmarks, scores their answers and saves execution e
 
 [**Positioning**](#positioning) | [**Motivation**](#why-alphadiana) | [**Scope**](#scope-at-a-glance) | [**Quick Start**](#quick-start) | [**Docs**](#documentation) | [**Citation and acknowledgement**](#citation-and-acknowledgement) | [**Related Project**](#related-project)
 
+## Metaⁿ mini-project
+
+The [reproduction guide](reproduction/README.md) contains the pinned upstream dependency, offline checks, recorded results and implementation-review findings. See the [review](reproduction/IMPLEMENTATION_REVIEW.md) before interpreting historical A/B/C results.
+
 ## Positioning
 
 A **harness** controls how a model uses prompts, tools and persistent state.

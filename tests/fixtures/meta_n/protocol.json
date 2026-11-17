@@ -1,0 +1,60 @@
+{
+  "status": "frozen_before_formal_calls",
+  "dataset": "HuggingFaceH4/MATH-500",
+  "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "snapshot_sha256": "299c8299bd1a13e63d8b372c75a9a90c7320c0dda0a0a4493ba5588e57e6fa22",
+  "seed": 20261116,
+  "splits": {
+    "G": [
+      {
+        "id": "0",
+        "problem_hash": "bb55b9798d200778f5d4249062d83cbca84f0df66b94338ce3a3aadefe7c572e"
+      }
+    ],
+    "D": [
+      {
+        "id": "1",
+        "problem_hash": "c41c4d256c7ef8dc73dbff2912092b279a000c858e08b5438e53fd915837e2f5"
+      }
+    ],
+    "T": [
+      {
+        "id": "2",
+        "problem_hash": "1f2d49378ca35dba167d353f7d57851faf7f1fcde659e2de1ad53c75983c1ee8"
+      }
+    ]
+  },
+  "excluded_pilot_ids": [],
+  "preflight_summary_hash": "c0681f9a98b64c1385bc19275c92706ed20ca3e006cc5b1fcd1ac77647a55511",
+  "model": "deepseek-flash",
+  "temperature_solver": 0,
+  "temperature_omega": 0.7,
+  "thinking": "disabled",
+  "solver_max_tokens": 8192,
+  "omega_max_tokens": 8192,
+  "solver_input_bound": 16000,
+  "omega_input_bound": 80000,
+  "answer_contract": "Implement solve() with no arguments. Return only the final mathematical answer. For exact fractions, radicals, symbolic expressions, tuples, sets or intervals, return a Python raw string containing the exact LaTeX answer; do not replace exact values with decimal approximations. Use only Python standard library; llm/llm_batch and sympy are unavailable. Output only a fenced Python code block, without prose derivation.",
+  "scorer": "math_verify",
+  "math_verify_version": "0.8.0",
+  "max_concurrent": 1,
+  "execution_timeout": 5,
+  "max_api_retries": 0,
+  "selection": "dev accuracy; tie shallower then A first",
+  "generation": "A and B independent from identical base G traces; C from A G traces and A source",
+  "failure_policy": "no paid regeneration; invalid child falls back to A, invalid A stops; provider error stops for audit; no replacing scored outputs",
+  "budget_exhaustion": "stop and report incomplete; no mid-run cap expansion",
+  "branch_search_token_reservation_cap": 2000000,
+  "branch_search_cny_reservation_cap": 12,
+  "formal_scope_cny_reservation_cap": 41,
+  "project_cny_reservation_cap": 50,
+  "max_solver_calls": 270,
+  "max_omega_calls": 3,
+  "formal_worst_case_reserved_cny": 40.516992,
+  "prior_reserved_cny_at_freeze": 3.846042000000003,
+  "combined_worst_case_reserved_cny": 44.363034000000006,
+  "all_search_calls_including_G_AC_diagnostics_counted": true,
+  "shared_calls_counted_in_both_branches_but_once_physically": true,
+  "public_dataset_limitation": "Unseen to strategy generation/selection, not necessarily unseen in model pretraining",
+  "hash": "36539666b6a22f04b2d1e3597c4b612dd72086c6814f820ded44a8a67748b398"
+}

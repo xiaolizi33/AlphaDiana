@@ -52,6 +52,8 @@ dump.rdb
 !/configs/README.md
 !/configs/PROMPTS.md
 !/configs/schema.yaml
+!/configs/meta_n/
+!/configs/meta_n/**
 !/configs/macro_runs/
 !/configs/macro_runs/**
 !/configs/micro_runs/
