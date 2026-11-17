@@ -1,6 +1,6 @@
 # Metaⁿ integration and recorded experiments
 
-This fork implements the mini-project's AlphaDiana harness and A/B/C selection structure, and includes a scaled official archive-versus-flat ablation. Read [implementation review](IMPLEMENTATION_REVIEW.md) first: review found and fixed an upstream-depth/baseline-payload discrepancy in the historical attachment generator. Historical numerical results have not been regenerated after that fix.
+This fork implements the mini-project's AlphaDiana harness and A/B/C selection structure, and includes a scaled official archive-versus-flat ablation. Read [问题复盘（中文）](ISSUES_AND_LESSONS.md) and [implementation review](IMPLEMENTATION_REVIEW.md) first: review found and fixed an upstream-depth/baseline-payload discrepancy in the historical attachment generator. Historical numerical results have not been regenerated after that fix.
 
 ## Install
 

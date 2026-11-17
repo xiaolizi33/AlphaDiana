@@ -1,0 +1,13 @@
+{
+  "issue": "Recovery matching compared raw multiline description against JSON-escaped messages and missed the retained truncation, causing one unintended repeat",
+  "original_truncation_request": "7e8953833e0a4f7583c567a47c75d428",
+  "excluded_extra_request": "a96161acda434ed28b6db92cd96128aa",
+  "resolution": "original response scored zero; extra output excluded from selection and metrics but included in physical tokens and cost",
+  "paid_requests_in_this_audit": 0,
+  "best_flat_estimators_changed": false,
+  "original_files": {
+    "draw_2_common_due_date_scheduling.json": "2a0735b0247e225a44200407aeb5d4a9dcad068db9f1241333a49582f80dcabb",
+    "comparison_before.json": "730610f418c163a2c45f6dae7dc709dc0225b6ffcd58b99d303f9a6c58037864",
+    "draw_2.json": "83764179bb6c216657c036820addf2f0b7ef91aaa717e71fd251360c29377c1e"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "cobench_corrected": {
+    "physical_calls": 27,
+    "physical_tokens": 133467,
+    "reserved_cny": 3.5601449999999994,
+    "truncated_outputs": 0,
+    "report": "companion-artifacts/experiments/cobench_corrected/report.md"
+  },
+  "deepseek_recursive_ablation": {
+    "physical_calls": 43,
+    "physical_tokens": 284047,
+    "reserved_cny": 6.410261999999999,
+    "truncated_outputs": 8,
+    "report": "companion-artifacts/experiments/deepseek_recursive_ablation/report.md"
+  },
+  "deepseek_recursive_ablation_16k": {
+    "physical_calls": 68,
+    "physical_tokens": 328087,
+    "reserved_cny": 16.547045999999998,
+    "truncated_outputs": 1,
+    "report": "companion-artifacts/experiments/deepseek_recursive_ablation_16k/report.md"
+  },
+  "totals": {
+    "new_physical_calls": 138,
+    "new_physical_tokens": 745601,
+    "new_reserved_cny": 26.517452999999996,
+    "project_cumulative_reserved_cny": 62.59623299999987,
+    "not_actual_provider_billing": true,
+    "utc": "2026-11-16T10:33:20.837874+00:00"
+  }
+}

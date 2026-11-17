@@ -1,5 +1,7 @@
 # Implementation review — 2026-11-17
 
+See also [问题复盘与修复记录（中文）](ISSUES_AND_LESSONS.md).
+
 Scope: AlphaDiana Metaⁿ harness, generation boundary, isolation/scoring, recovery, accounting and delivery. No paid requests were made during review. Historical raw outputs and scores were retained.
 
 ## Material finding: attachment generator differed from upstream
