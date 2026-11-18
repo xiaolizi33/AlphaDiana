@@ -11,13 +11,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--campaign', choices=['math500', 'cobench'], required=True)
     parser.add_argument('--stage', choices=['validate', 'all'], default='all')
-    parser.add_argument('--repeat-id', type=int, choices=[2, 3])
+    parser.add_argument('--repeat-id', type=int, choices=[2, 3, 4])
     parser.add_argument('--project-cap-cny', type=float, default=150)
     args = parser.parse_args()
     suffix = f'_repeat{args.repeat_id}' if args.repeat_id else ''
     if args.campaign == 'math500':
         import formal_campaign as campaign
         old_root = campaign.ROOT
+        campaign.REUSE_IDENTICAL_TEST_CHAIN = args.repeat_id == 4
         scope = 'math500_review_20261118' + suffix
         campaign.ROOT = old_root.with_name(scope)
         campaign.BOTH = [scope + '_independent', scope + '_recursive']

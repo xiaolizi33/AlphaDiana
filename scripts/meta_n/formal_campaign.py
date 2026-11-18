@@ -146,6 +146,9 @@ def summarize(p, selection, tests):
     print(json.dumps(groups,ensure_ascii=False,indent=2))
 
 
+REUSE_IDENTICAL_TEST_CHAIN = False
+
+
 def execute(stage):
     core.ROOT = ROOT
     p,tasks = protocol()
@@ -184,8 +187,16 @@ def execute(stage):
         chain=core.load_chain(configs[label]['agent']['config']['strategy_chain'])
         if [core.digest(ic.model_dump()) for ic in chain] != selection[label]['chain_hashes']:
             raise ValueError('Selected strategy changed')
-    core.save(ROOT/'test_manifest.json',{'protocol_hash':p['hash'],'selection_hash':core.digest(selection),'configs':configs})
-    tests={label:run(p,'T',label,[] if label=='base' else selection[label]['chain'],[]) for label in configs}
+    reuse = (REUSE_IDENTICAL_TEST_CHAIN and
+             selection['independent']['chain_hashes'] == selection['recursive']['chain_hashes'])
+    core.save(ROOT/'test_manifest.json',{'protocol_hash':p['hash'],'selection_hash':core.digest(selection),
+              'configs':configs,'test_output_reuse':{'recursive':'independent'} if reuse else {}})
+    tests = {}
+    for label in configs:
+        if label == 'recursive' and reuse:
+            tests[label] = tests['independent']
+        else:
+            tests[label] = run(p,'T',label,[] if label=='base' else selection[label]['chain'],[])
     summarize(p,selection,tests)
 
 

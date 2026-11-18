@@ -1,0 +1,218 @@
+{
+  "protocol_hash": "675944cc9e6486faa6d4e4f4e842a84c4ec6d51dc0746efe89de10338fbbf0ed",
+  "selection": {
+    "protocol_hash": "675944cc9e6486faa6d4e4f4e842a84c4ec6d51dc0746efe89de10338fbbf0ed",
+    "independent": {
+      "winner": "A",
+      "chain": [
+        "A"
+      ],
+      "chain_hashes": [
+        "65ea75007d134cafd216cfb4f64513ec41ee9a97261a5176b720b64184961652"
+      ],
+      "dev_correct": {
+        "A": 15,
+        "B": 13
+      },
+      "dev_n": 20
+    },
+    "recursive": {
+      "winner": "A",
+      "chain": [
+        "A"
+      ],
+      "chain_hashes": [
+        "65ea75007d134cafd216cfb4f64513ec41ee9a97261a5176b720b64184961652"
+      ],
+      "dev_correct": {
+        "A": 15,
+        "AC": 13
+      },
+      "dev_n": 20
+    },
+    "test_executed": false,
+    "supplemental_budget": false,
+    "dev_results_hash": "b2117c3a33a8690fc60430d87eae847c7fdfd7b36ffefb79f4a56a3c34ef064a"
+  },
+  "test_groups": {
+    "base": {
+      "n": 60,
+      "correct": 46,
+      "tokens": 50318
+    },
+    "independent": {
+      "n": 60,
+      "correct": 53,
+      "tokens": 81228
+    },
+    "recursive": {
+      "n": 60,
+      "correct": 53,
+      "tokens": 81228
+    }
+  },
+  "paired_vs_base": {
+    "independent": {
+      "fixed": [
+        "test/intermediate_algebra/362.json",
+        "test/algebra/621.json",
+        "test/number_theory/627.json",
+        "test/prealgebra/1187.json",
+        "test/prealgebra/1961.json",
+        "test/algebra/2264.json",
+        "test/number_theory/1000.json",
+        "test/algebra/1098.json",
+        "test/algebra/2214.json",
+        "test/precalculus/697.json"
+      ],
+      "regressed": [
+        "test/precalculus/145.json",
+        "test/prealgebra/1686.json",
+        "test/counting_and_probability/181.json"
+      ]
+    },
+    "recursive": {
+      "fixed": [
+        "test/intermediate_algebra/362.json",
+        "test/algebra/621.json",
+        "test/number_theory/627.json",
+        "test/prealgebra/1187.json",
+        "test/prealgebra/1961.json",
+        "test/algebra/2264.json",
+        "test/number_theory/1000.json",
+        "test/algebra/1098.json",
+        "test/algebra/2214.json",
+        "test/precalculus/697.json"
+      ],
+      "regressed": [
+        "test/precalculus/145.json",
+        "test/prealgebra/1686.json",
+        "test/counting_and_probability/181.json"
+      ]
+    }
+  },
+  "recursive_vs_independent": {
+    "fixed": [],
+    "regressed": []
+  },
+  "branch_reservations": {
+    "math500_review_20261118_repeat4_independent": {
+      "reserved_cny": 5.781911999999998,
+      "token_bound": 649352
+    },
+    "math500_review_20261118_repeat4_recursive": {
+      "reserved_cny": 8.261813999999998,
+      "token_bound": 984466
+    }
+  },
+  "project_reserved_cny": 214.38842099999985,
+  "runs": {
+    "math500_formal_G_AC": {
+      "n": 10,
+      "correct": 10,
+      "tokens": 13292
+    },
+    "math500_formal_G_base": {
+      "n": 10,
+      "correct": 8,
+      "tokens": 5469
+    },
+    "math500_formal_T_base": {
+      "n": 60,
+      "correct": 46,
+      "tokens": 50318
+    },
+    "math500_formal_D_A": {
+      "n": 20,
+      "correct": 15,
+      "tokens": 34040
+    },
+    "math500_formal_D_B": {
+      "n": 20,
+      "correct": 13,
+      "tokens": 30861
+    },
+    "math500_formal_T_independent": {
+      "n": 60,
+      "correct": 53,
+      "tokens": 81228
+    },
+    "math500_formal_G_A": {
+      "n": 10,
+      "correct": 10,
+      "tokens": 10142
+    },
+    "math500_formal_D_AC": {
+      "n": 20,
+      "correct": 13,
+      "tokens": 44970
+    }
+  },
+  "generation": {
+    "A": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 1842,
+        "prompt_tokens": 3509,
+        "total_tokens": 5351,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 1536,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 1973
+      },
+      "reserved_cny": 0.145596,
+      "source_rows_hash": "1ff33acb7e5ccff16e1cdc49480c90db0113f17c2d9ce581549cddaa35c0e066"
+    },
+    "B": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 975,
+        "prompt_tokens": 3509,
+        "total_tokens": 4484,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 3328,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 3328,
+        "prompt_cache_miss_tokens": 181
+      },
+      "reserved_cny": 0.145596,
+      "source_rows_hash": "1ff33acb7e5ccff16e1cdc49480c90db0113f17c2d9ce581549cddaa35c0e066"
+    },
+    "C": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 1729,
+        "prompt_tokens": 9479,
+        "total_tokens": 11208,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 1280,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 8199
+      },
+      "reserved_cny": 0.216,
+      "source_rows_hash": "5664c98d398ad825eef805f5ff3a7fccf5f47478e59a5f9b85c45204116ee200"
+    }
+  },
+  "limitations": [
+    "Single search seed, 60 test tasks",
+    "Public dataset may occur in pretraining",
+    "Provider alias is not an immutable model version"
+  ]
+}

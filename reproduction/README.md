@@ -68,3 +68,13 @@ The companion artifact archive preserves original protocols, strategy code, requ
 - `recursive_ablation_16k.py`: official evolutionary search vs four flat draws; scaled protocol and departures.
 
 The repository is prepared locally for review. It has not been pushed to the upstream tmlr-group remote.
+
+## Task C 补充对照
+
+`rerun_review.py --repeat-id 4` 使用原 MATH-500 快照和 G/D/T 划分，以新的上下文采样 seed 重新生成 A/B/C。运行前核对项目现有费用预留与上限，端点凭据沿用上文配置。
+
+```sh
+python scripts/meta_n/rerun_review.py --campaign math500 --repeat-id 4 --project-cap-cny 250
+```
+
+两个分支选中相同策略内容时，测试阶段只运行一次该策略。冻结的 `test_manifest.json` 记录复用关系。输出位于同级 `experiments/math500_review_20261118_repeat4`。汇总文件分别记录逐组分数、相对基线的逐题变化和物理调用用量。
