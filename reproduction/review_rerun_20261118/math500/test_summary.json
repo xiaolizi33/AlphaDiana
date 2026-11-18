@@ -1,0 +1,225 @@
+{
+  "protocol_hash": "16e81bdb77a38689219b1fb688683193caa245f6764599bd176eb20bcebe9e5f",
+  "selection": {
+    "protocol_hash": "16e81bdb77a38689219b1fb688683193caa245f6764599bd176eb20bcebe9e5f",
+    "independent": {
+      "winner": "A",
+      "chain": [
+        "A"
+      ],
+      "chain_hashes": [
+        "62ce4478c4d0c50f595c9fde0d2bd0276899e925068b223ee6006a077778dd4f"
+      ],
+      "dev_correct": {
+        "A": 19,
+        "B": 18
+      },
+      "dev_n": 20
+    },
+    "recursive": {
+      "winner": "A",
+      "chain": [
+        "A"
+      ],
+      "chain_hashes": [
+        "62ce4478c4d0c50f595c9fde0d2bd0276899e925068b223ee6006a077778dd4f"
+      ],
+      "dev_correct": {
+        "A": 19,
+        "AC": 15
+      },
+      "dev_n": 20
+    },
+    "test_executed": false,
+    "supplemental_budget": false,
+    "dev_results_hash": "0ef3c0235d971a14de91d6da5c56799eb8f711cf46f80ffe173a95d77a853ed7"
+  },
+  "test_groups": {
+    "base": {
+      "n": 60,
+      "correct": 44,
+      "tokens": 52907
+    },
+    "independent": {
+      "n": 60,
+      "correct": 56,
+      "tokens": 82257
+    },
+    "recursive": {
+      "n": 60,
+      "correct": 52,
+      "tokens": 96493
+    }
+  },
+  "paired_vs_base": {
+    "independent": {
+      "fixed": [
+        "test/precalculus/695.json",
+        "test/intermediate_algebra/362.json",
+        "test/geometry/172.json",
+        "test/algebra/621.json",
+        "test/algebra/668.json",
+        "test/number_theory/627.json",
+        "test/prealgebra/1187.json",
+        "test/intermediate_algebra/1849.json",
+        "test/algebra/2264.json",
+        "test/number_theory/1000.json",
+        "test/algebra/1098.json",
+        "test/algebra/2214.json"
+      ],
+      "regressed": []
+    },
+    "recursive": {
+      "fixed": [
+        "test/precalculus/695.json",
+        "test/intermediate_algebra/362.json",
+        "test/geometry/172.json",
+        "test/algebra/621.json",
+        "test/number_theory/627.json",
+        "test/prealgebra/1187.json",
+        "test/algebra/2264.json",
+        "test/number_theory/1000.json",
+        "test/algebra/1098.json",
+        "test/algebra/2214.json"
+      ],
+      "regressed": [
+        "test/counting_and_probability/181.json",
+        "test/algebra/1214.json"
+      ]
+    }
+  },
+  "recursive_vs_independent": {
+    "fixed": [],
+    "regressed": [
+      "test/algebra/668.json",
+      "test/counting_and_probability/181.json",
+      "test/intermediate_algebra/1849.json",
+      "test/algebra/1214.json"
+    ]
+  },
+  "branch_reservations": {
+    "math500_review_20261118_independent": {
+      "reserved_cny": 5.941026000000001,
+      "token_bound": 702390
+    },
+    "math500_review_20261118_recursive": {
+      "reserved_cny": 8.435475000000002,
+      "token_bound": 1042353
+    }
+  },
+  "project_reserved_cny": 96.23483699999987,
+  "runs": {
+    "math500_formal_G_AC": {
+      "n": 10,
+      "correct": 10,
+      "tokens": 14849
+    },
+    "math500_formal_G_base": {
+      "n": 10,
+      "correct": 7,
+      "tokens": 4700
+    },
+    "math500_formal_T_base": {
+      "n": 60,
+      "correct": 44,
+      "tokens": 52907
+    },
+    "math500_formal_D_A": {
+      "n": 20,
+      "correct": 19,
+      "tokens": 35599
+    },
+    "math500_formal_T_recursive": {
+      "n": 60,
+      "correct": 52,
+      "tokens": 96493
+    },
+    "math500_formal_D_B": {
+      "n": 20,
+      "correct": 18,
+      "tokens": 39940
+    },
+    "math500_formal_T_independent": {
+      "n": 60,
+      "correct": 56,
+      "tokens": 82257
+    },
+    "math500_formal_G_A": {
+      "n": 10,
+      "correct": 10,
+      "tokens": 11452
+    },
+    "math500_formal_D_AC": {
+      "n": 20,
+      "correct": 15,
+      "tokens": 47957
+    }
+  },
+  "generation": {
+    "A": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 2040,
+        "prompt_tokens": 3517,
+        "total_tokens": 5557,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 1408,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 2109
+      },
+      "reserved_cny": 0.145674,
+      "source_rows_hash": "8421f84b5746046e5054c77d787c5a42264c7b71a861f3b6c00ce13e93a6cdc7"
+    },
+    "B": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 1717,
+        "prompt_tokens": 3517,
+        "total_tokens": 5234,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 3328,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 3328,
+        "prompt_cache_miss_tokens": 189
+      },
+      "reserved_cny": 0.145674,
+      "source_rows_hash": "8421f84b5746046e5054c77d787c5a42264c7b71a861f3b6c00ce13e93a6cdc7"
+    },
+    "C": {
+      "valid": true,
+      "token_usage": {
+        "completion_tokens": 1933,
+        "prompt_tokens": 10835,
+        "total_tokens": 12768,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 1280,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 9555
+      },
+      "reserved_cny": 0.235143,
+      "source_rows_hash": "93f986f1b2a09d195960976be7605560f529afd7a14040a6460d787ee7e570e6"
+    }
+  },
+  "limitations": [
+    "Single search seed, 60 test tasks",
+    "Public dataset may occur in pretraining",
+    "Provider alias is not an immutable model version"
+  ]
+}

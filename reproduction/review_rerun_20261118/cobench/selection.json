@@ -1,0 +1,15 @@
+{
+  "independent": "A",
+  "recursive": "AC",
+  "dev_scores": {
+    "A": 0.054913204841625346,
+    "B": 0.0,
+    "AC": 0.3415927138945041
+  },
+  "protocol_hash": "73fcc2567bc78047d52afb6a0023d3acf9abe136841affac55c9e304b11c9e77",
+  "chain_hashes": {
+    "A": "b7a692e1fbea06a67563353a610123876eb780454c269d85b7cda15a9eee3053",
+    "B": "fbc46f1ad109b971f32c5dc450b75b6c98a09cddbd95ac4224e022f1a57e0f5a",
+    "C": "793d41c15eb69cfb38cfd1097becf806a251ac32fa7b8d7fab8b48e3e5b04bc6"
+  }
+}

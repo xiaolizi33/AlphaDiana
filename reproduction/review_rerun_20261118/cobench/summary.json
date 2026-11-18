@@ -1,0 +1,46 @@
+{
+  "selection": {
+    "independent": "A",
+    "recursive": "AC",
+    "dev_scores": {
+      "A": 0.054913204841625346,
+      "B": 0.0,
+      "AC": 0.3415927138945041
+    },
+    "protocol_hash": "73fcc2567bc78047d52afb6a0023d3acf9abe136841affac55c9e304b11c9e77",
+    "chain_hashes": {
+      "A": "b7a692e1fbea06a67563353a610123876eb780454c269d85b7cda15a9eee3053",
+      "B": "fbc46f1ad109b971f32c5dc450b75b6c98a09cddbd95ac4224e022f1a57e0f5a",
+      "C": "793d41c15eb69cfb38cfd1097becf806a251ac32fa7b8d7fab8b48e3e5b04bc6"
+    }
+  },
+  "test_mean_scores": {
+    "base": 0.8328805347880263,
+    "independent": 0.6641864274281906,
+    "recursive": 0.7642355130301445
+  },
+  "physical_tokens": 153671,
+  "limitations": [
+    "9 fresh task families, one official case file each; small-scale comparison",
+    "single search seed",
+    "new backbone, not paper numerical replication",
+    "continuous normalized scores, not math accuracy"
+  ],
+  "paired_test_scores": [
+    {
+      "base": 0.9999999999999999,
+      "independent": 0.9925592822845716,
+      "recursive": 0.9925592822845716
+    },
+    {
+      "base": 1.0,
+      "independent": 1.0,
+      "recursive": 1.0
+    },
+    {
+      "base": 0.498641604364079,
+      "independent": 0.0,
+      "recursive": 0.3001472568058617
+    }
+  ]
+}

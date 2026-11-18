@@ -98,10 +98,10 @@ async def generate(p, tasks, name, parent, rows, branches, baseline_rows=None):
     return await core.generate({**p,'G':tasks}, name, parent, rows, branches, baseline_rows=baseline_rows)
 
 
-def audit_reservations():
+def audit_reservations(scope="math500_formal"):
     """A paid request without a durable result must never be silently repeated."""
     ledger = core.REPO.parent/'experiments/budget_reservations.jsonl'
-    entries = [r for r in map(json.loads,ledger.read_text().splitlines()) if r.get('scope')=='math500_formal']
+    entries = [r for r in map(json.loads,ledger.read_text().splitlines()) if r.get('scope')==scope]
     recorded = []
     for path in (ROOT/'results').glob('*.jsonl'):
         recorded.extend(r['metadata']['reserved_cny'] for r in core.read_rows(path) if r.get('score_status')=='valid_scored')

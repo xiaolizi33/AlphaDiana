@@ -1,0 +1,16 @@
+{
+  "independent": {
+    "omega": 10791,
+    "feedback_solver": 4700,
+    "diagnostic_solver": 0,
+    "development_solver": 75539,
+    "test_solver": 82257
+  },
+  "recursive": {
+    "omega": 18325,
+    "feedback_solver": 16152,
+    "diagnostic_solver": 14849,
+    "development_solver": 83556,
+    "test_solver": 96493
+  }
+}

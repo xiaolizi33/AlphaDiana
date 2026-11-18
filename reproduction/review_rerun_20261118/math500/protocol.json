@@ -1,0 +1,599 @@
+{
+  "status": "frozen_before_formal_calls",
+  "dataset": "HuggingFaceH4/MATH-500",
+  "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "snapshot_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "seed": 20261116,
+  "splits": {
+    "G": [
+      {
+        "id": "test/algebra/2251.json",
+        "problem_hash": "970d2d9a8fa0511b6d6e2da3d002ac166b046ae78dd824ee55e5101d41fe8d66",
+        "subject": "Algebra",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1203.json",
+        "problem_hash": "d7d8d83e1df10156708a1e677e545d7a799115afcc8d7d014e7605ba6619060c",
+        "subject": "Prealgebra",
+        "level": 5
+      },
+      {
+        "id": "test/prealgebra/993.json",
+        "problem_hash": "33586925a35e980a15d8107d4bca774ec28eedc0f667289dac6e412b00ca28d8",
+        "subject": "Prealgebra",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/109.json",
+        "problem_hash": "e852f5af104e1c744a6e1973ee2c30ecf59c6046b5afc0e424a8d9e6700a12f7",
+        "subject": "Number Theory",
+        "level": 4
+      },
+      {
+        "id": "test/intermediate_algebra/690.json",
+        "problem_hash": "b9d8866d7f39465491e590e93a59f38c31c5f1d2f6a4f377701043295d727f6e",
+        "subject": "Intermediate Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/1078.json",
+        "problem_hash": "3e0dfc02ba4c8a7518f6df18e2b3786696a69aa1e391783201edc679cafd0f6e",
+        "subject": "Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/intermediate_algebra/199.json",
+        "problem_hash": "76f05a4f0d61bd7e12fd8842b7ddf86647874556df0df474ede781e8c5820809",
+        "subject": "Intermediate Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/intermediate_algebra/1508.json",
+        "problem_hash": "53798c37f23a0bbf00e74a776ad0c69afd37dd0e284c246477514c9f52218075",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/2080.json",
+        "problem_hash": "c2b6903a05e603c4312673932d49315f1f8f777acf05bcc02871b6f5e0239042",
+        "subject": "Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/2430.json",
+        "problem_hash": "6bc60395fa0a6a81a5d948b8bfd3bb1fb931700f76176c98e7b7cc83efac5cb6",
+        "subject": "Algebra",
+        "level": 4
+      }
+    ],
+    "D": [
+      {
+        "id": "test/intermediate_algebra/966.json",
+        "problem_hash": "a964979afb5c0cda12807059d812b70643173bbfa7d9951b4da9b7d84a94658b",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/1082.json",
+        "problem_hash": "fc12b4a2a711e9624ef12b0facefe337d20ba7f092940afcaed6dc9a86cac511",
+        "subject": "Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/intermediate_algebra/1123.json",
+        "problem_hash": "80f39d3390fc053f32e1c3bef711372ccf1e6ec9f13dba46e1d4bf429f64854e",
+        "subject": "Intermediate Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/2592.json",
+        "problem_hash": "110c5659b36090212aa6eab7f176c4554190b793f30e77d8d4985c130c9d2314",
+        "subject": "Algebra",
+        "level": 1
+      },
+      {
+        "id": "test/algebra/1842.json",
+        "problem_hash": "991643da5ee4b66bfc758f9dc4ecd54f5596c1b2d4f1e4d164d46863d75987a2",
+        "subject": "Algebra",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1646.json",
+        "problem_hash": "bed350659a7b34735740f9d0e0f9cc7d866732df7cbdce39dc87eb7e94b253e7",
+        "subject": "Prealgebra",
+        "level": 5
+      },
+      {
+        "id": "test/counting_and_probability/1003.json",
+        "problem_hash": "bd2cd002690df9018a51c1082a4745cdc829c0dcc39cea8b7c39140d7afc6ab0",
+        "subject": "Counting & Probability",
+        "level": 5
+      },
+      {
+        "id": "test/counting_and_probability/134.json",
+        "problem_hash": "41d3556952b44a16d0206efdc35c194f18667df4f70156fbcab645931001c985",
+        "subject": "Counting & Probability",
+        "level": 4
+      },
+      {
+        "id": "test/precalculus/452.json",
+        "problem_hash": "632e19c389546a4980c94ab4d17456919954cf8c5458e217d235a2fc2e6f066c",
+        "subject": "Precalculus",
+        "level": 2
+      },
+      {
+        "id": "test/number_theory/89.json",
+        "problem_hash": "18e80788b4b872e1161703c808df8c603c6e1095d723db3109d796e4edd8bf0d",
+        "subject": "Number Theory",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/1529.json",
+        "problem_hash": "62a64f003e792a29b92e75721b2da0b3ad11364fea28f02f63f21cf6b279fa60",
+        "subject": "Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/intermediate_algebra/591.json",
+        "problem_hash": "7e800c37bc5de883e1fc62c82e37adca6a0c1ad621c147e911cc7664fbdc93c1",
+        "subject": "Intermediate Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/928.json",
+        "problem_hash": "e6e8153cea25406cac1ddf6a03d3c4cb252f3870381cd21546bf9c3439ece06c",
+        "subject": "Number Theory",
+        "level": 4
+      },
+      {
+        "id": "test/geometry/711.json",
+        "problem_hash": "9f7060847b17a410c58c030a98390ca833a3a6f8b5d2bd2910e638607755c52e",
+        "subject": "Geometry",
+        "level": 5
+      },
+      {
+        "id": "test/precalculus/1300.json",
+        "problem_hash": "83c4b0a9bb94a3fe95769e22b6faa3bca7d8ede0cc51e940a68af5c05e5e1ac7",
+        "subject": "Precalculus",
+        "level": 3
+      },
+      {
+        "id": "test/prealgebra/930.json",
+        "problem_hash": "afa78fce6a58e951b5bf0cb5857e9d113a1d41cfabdf6555ba4cae0836a45eae",
+        "subject": "Prealgebra",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1233.json",
+        "problem_hash": "fa72648986baf8b355cd9fa0226e20de9a48d2bc3f14bf231671381baf4fcaab",
+        "subject": "Prealgebra",
+        "level": 4
+      },
+      {
+        "id": "test/precalculus/881.json",
+        "problem_hash": "e0b9308745c125a6c4dab3323c6553195ead3978632c9f464a1a5aece3fdaf71",
+        "subject": "Precalculus",
+        "level": 4
+      },
+      {
+        "id": "test/prealgebra/1733.json",
+        "problem_hash": "1027244de39ede35a005fe4015708ef37984dc823612ab33315d09d17f687c02",
+        "subject": "Prealgebra",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/1837.json",
+        "problem_hash": "895ca3b1b86fa69584d29cf8723250d199f2af776874a647ea29466a0a08e162",
+        "subject": "Algebra",
+        "level": 5
+      }
+    ],
+    "T": [
+      {
+        "id": "test/precalculus/695.json",
+        "problem_hash": "263ac60dbdbc20a7c6d125458d9d49a20205c3928469078046f5d4a5a16e3e2f",
+        "subject": "Precalculus",
+        "level": 2
+      },
+      {
+        "id": "test/intermediate_algebra/362.json",
+        "problem_hash": "a068bcf9a76f117bd6fe13b16450458d947736962674c7a287e9290958fd6f93",
+        "subject": "Intermediate Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/24.json",
+        "problem_hash": "ada3449d6c1b4f7841c5f85ed67d655fcebc84acba87a037c8aa9ba5690a4826",
+        "subject": "Algebra",
+        "level": 1
+      },
+      {
+        "id": "test/geometry/172.json",
+        "problem_hash": "e2fb55734eeab0aa622309f3b30e28d4bdfeaa70b53afa636cd04279a5753835",
+        "subject": "Geometry",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/975.json",
+        "problem_hash": "be760dca66d83c6cbb6726b0876142ee51fa4cbcfad795a460d64ce879a7a137",
+        "subject": "Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/number_theory/342.json",
+        "problem_hash": "afeeaa87b08aba004050f3cc01aac362db0e5dd49e2c997bc55b0da87b030174",
+        "subject": "Number Theory",
+        "level": 1
+      },
+      {
+        "id": "test/geometry/802.json",
+        "problem_hash": "07c21cab64a26add0d88941cf30de99b98d6ce3ec97003fa48973071f2ef255f",
+        "subject": "Geometry",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1784.json",
+        "problem_hash": "7a08b1e0738c5704881c8dfe8896e7b139501b6cfdf518732dbd2223e15ec152",
+        "subject": "Prealgebra",
+        "level": 2
+      },
+      {
+        "id": "test/algebra/621.json",
+        "problem_hash": "99a02677859ff931b94b72807f4525c5c7cdf64d78a3efe8e70fcf59924d8fd2",
+        "subject": "Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/791.json",
+        "problem_hash": "b8f32a361ea5e3f0e7135cea5a8b8fd26b865e982f16a507ab08aae3842e4984",
+        "subject": "Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/847.json",
+        "problem_hash": "bdd63ce36db1d366c27667261f1d40bc95ad8755a5161956734139dd8c54fe7d",
+        "subject": "Number Theory",
+        "level": 3
+      },
+      {
+        "id": "test/number_theory/1065.json",
+        "problem_hash": "8658bcbdfcba8f2a373b5296ea2312e002caa58e45f89277dd3343f5a0c74d34",
+        "subject": "Number Theory",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/2391.json",
+        "problem_hash": "cc6d6cfdbafe12a6063be37b631f5f4d32577da0644440cf284607e3454c17f9",
+        "subject": "Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/864.json",
+        "problem_hash": "ba4baca99f786d0298e83091138b001c4bd73395a32d68c9ffd365a504e85f51",
+        "subject": "Number Theory",
+        "level": 3
+      },
+      {
+        "id": "test/counting_and_probability/190.json",
+        "problem_hash": "c8ffc8abd576c2288007577e801858b38f88a9ef8ef49c81cf4926e080208dbc",
+        "subject": "Counting & Probability",
+        "level": 2
+      },
+      {
+        "id": "test/intermediate_algebra/1898.json",
+        "problem_hash": "4e9447c8f82a516292cda77466d61b63cbce92a8f5a6532a77c29b6f91c96daf",
+        "subject": "Intermediate Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/668.json",
+        "problem_hash": "83f4c16643c03c35f62d355a38aeea4b340fc2bb0dbb83ebadaa7d3e7b99008f",
+        "subject": "Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/1814.json",
+        "problem_hash": "952221c2cf0a424834d8a81fc0b3217c6c3dfeca9f2b197f1c8e7aa8297d4935",
+        "subject": "Algebra",
+        "level": 2
+      },
+      {
+        "id": "test/intermediate_algebra/1126.json",
+        "problem_hash": "a747fcab22d28f3fbaa81651737c1275b14aea9533bf17d01b1c5c4806860d95",
+        "subject": "Intermediate Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/precalculus/145.json",
+        "problem_hash": "b81ec317ded641b306d06ba443b7710094a4a82c573c51662fcec5162814706d",
+        "subject": "Precalculus",
+        "level": 4
+      },
+      {
+        "id": "test/geometry/483.json",
+        "problem_hash": "c4b2a3197c37642f47b621f5f2913e5e8881162907614d68b652ba8a2a3c6d95",
+        "subject": "Geometry",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/627.json",
+        "problem_hash": "03b83c4a539fe02c0ac19198a48a84d07467a14b1635c38b7777d1efa284e37a",
+        "subject": "Number Theory",
+        "level": 2
+      },
+      {
+        "id": "test/precalculus/703.json",
+        "problem_hash": "034df2c0ab5404e36267f872a04562d4ba2b098f9fa7c75c095181dc3b342b77",
+        "subject": "Precalculus",
+        "level": 5
+      },
+      {
+        "id": "test/intermediate_algebra/1510.json",
+        "problem_hash": "93de42dabfe710f241e3386ce901699d4ae7fbc0dbcbef3297ec3f9e2adfeb5d",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/prealgebra/1187.json",
+        "problem_hash": "906224954d36b2056079b9f9d5a8b932c2737b96e1a8e5026b517f2e9aabdbfe",
+        "subject": "Prealgebra",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1686.json",
+        "problem_hash": "b341017b3a4a058629e8e095ca10bf1ebf2bc5775bbec2129993136a9c0afc8e",
+        "subject": "Prealgebra",
+        "level": 3
+      },
+      {
+        "id": "test/counting_and_probability/181.json",
+        "problem_hash": "56464c238fee412b9d81ec627e8d40ce837033e96d5db4bd809eb2f068039c09",
+        "subject": "Counting & Probability",
+        "level": 5
+      },
+      {
+        "id": "test/prealgebra/1865.json",
+        "problem_hash": "ce0f5f381f69cc9c222f1cd970f0e6fd342342918cc4015010eab73d3a55870d",
+        "subject": "Prealgebra",
+        "level": 4
+      },
+      {
+        "id": "test/precalculus/986.json",
+        "problem_hash": "eb7fab810df1aecd5dba6d412678d031f113eb52f27a51b9499f254c74903540",
+        "subject": "Precalculus",
+        "level": 5
+      },
+      {
+        "id": "test/prealgebra/192.json",
+        "problem_hash": "d24331f9447d4b984812bae88011d8acb1de01b3d14c9a9bed8c5a6248db5c48",
+        "subject": "Prealgebra",
+        "level": 1
+      },
+      {
+        "id": "test/prealgebra/1961.json",
+        "problem_hash": "f03b793a56f660851960aed0eb846fa18feb857735e6cfd5985b95f246a081ac",
+        "subject": "Prealgebra",
+        "level": 5
+      },
+      {
+        "id": "test/intermediate_algebra/121.json",
+        "problem_hash": "0f54ba50cd05a3665b466ae749698ef84319dd08f34dfd78608f7d0bfdf706b4",
+        "subject": "Intermediate Algebra",
+        "level": 4
+      },
+      {
+        "id": "test/intermediate_algebra/1849.json",
+        "problem_hash": "10cffa339e5e63d4d647c9036b6b9c658d5cbcd1d04b5c39c4603b3cced01248",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/686.json",
+        "problem_hash": "725ac8e9f53a42626c23d5c229579ea56df94d758d426eeb352cc017b3994a57",
+        "subject": "Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/2264.json",
+        "problem_hash": "423c25b862f19f94ad3e941384f6caf84f6e4ece577d3a35f3fc6a92b640e475",
+        "subject": "Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/precalculus/826.json",
+        "problem_hash": "741ae28b5b41060e5f64ef3ee6e8e2e239e3807bfa7b336b7da331cfa1da734f",
+        "subject": "Precalculus",
+        "level": 3
+      },
+      {
+        "id": "test/counting_and_probability/230.json",
+        "problem_hash": "9cf4bafe2b3e7d91b26d03dea3388c79b9f3132a4b25a590b806d0192df78d1a",
+        "subject": "Counting & Probability",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/1035.json",
+        "problem_hash": "d326b708ea963c70d7dbedc6a074017ece48be485e2e9a3653c3eb7c1f8ac5e1",
+        "subject": "Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/number_theory/1002.json",
+        "problem_hash": "0d3165857333ce46316a381f24577ee25c3ee946fbd4888898f0c5fd321eca5b",
+        "subject": "Number Theory",
+        "level": 5
+      },
+      {
+        "id": "test/number_theory/1000.json",
+        "problem_hash": "73efc7fe9d01687fe4b14a9a54b067d99fc4ef306732c5421d5831d608ba914e",
+        "subject": "Number Theory",
+        "level": 5
+      },
+      {
+        "id": "test/intermediate_algebra/279.json",
+        "problem_hash": "4433cc0672977a073f6a14a61a7e4507b6bbb1d27bbbec2652f62b5a30acde90",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/algebra/1214.json",
+        "problem_hash": "d73b25060fdd96778e36abef744a073f305e95095b65a10e160b340dd527f09d",
+        "subject": "Algebra",
+        "level": 1
+      },
+      {
+        "id": "test/algebra/1553.json",
+        "problem_hash": "31748f8a31ea99277a6c26df2f20c4f27118916055f70a61220d7ebf695ce1a8",
+        "subject": "Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/algebra/1098.json",
+        "problem_hash": "5df144a8be1fe9104709d0d06fb33ac042867b230adce16d82f57386fa70e5e5",
+        "subject": "Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/geometry/947.json",
+        "problem_hash": "1848043f8b2b7b7d2ff059967a0939dc7af1b964e380f13c9c3d9f1f44c20ff6",
+        "subject": "Geometry",
+        "level": 5
+      },
+      {
+        "id": "test/counting_and_probability/913.json",
+        "problem_hash": "275e471966402876197baa81f7bb91f667fe47739830cacc5cbd1159147eb1ed",
+        "subject": "Counting & Probability",
+        "level": 3
+      },
+      {
+        "id": "test/intermediate_algebra/149.json",
+        "problem_hash": "ed5047e4203ae9da50411995e04cc199c6e61531306398b7609ad37fd4eab3dd",
+        "subject": "Intermediate Algebra",
+        "level": 1
+      },
+      {
+        "id": "test/intermediate_algebra/515.json",
+        "problem_hash": "bac669c1cd55d114634fb00a7fc483d4addfcf7a21fb9e4bb1bd8128575701d2",
+        "subject": "Intermediate Algebra",
+        "level": 2
+      },
+      {
+        "id": "test/precalculus/356.json",
+        "problem_hash": "525d5cff31a1fd1f560c15d47b247b485a2d0747af99bded96ceca596cb9f77f",
+        "subject": "Precalculus",
+        "level": 3
+      },
+      {
+        "id": "test/intermediate_algebra/607.json",
+        "problem_hash": "c7e10fcbb8a330811e0e14d7a0a1a42bb526aac603026227a2d8e761078b2d4d",
+        "subject": "Intermediate Algebra",
+        "level": 3
+      },
+      {
+        "id": "test/precalculus/1056.json",
+        "problem_hash": "1fb8fda1c9dac6b1142186a50a1377570500cfb9bcf5fa961522b94763aa4af0",
+        "subject": "Precalculus",
+        "level": 4
+      },
+      {
+        "id": "test/geometry/347.json",
+        "problem_hash": "4fb358a8bb5d777f4f67381b4086962439c582488fd6dae217187ed04db02f80",
+        "subject": "Geometry",
+        "level": 3
+      },
+      {
+        "id": "test/intermediate_algebra/1111.json",
+        "problem_hash": "fcca44bc6e46e65c59c9c6c61a898f7199c7b0a8018caee237449292b7dd6aba",
+        "subject": "Intermediate Algebra",
+        "level": 5
+      },
+      {
+        "id": "test/prealgebra/260.json",
+        "problem_hash": "b30cbd0019caed72459c57f622da2d69131f8ba4891e509d8c2303caf702ffeb",
+        "subject": "Prealgebra",
+        "level": 4
+      },
+      {
+        "id": "test/number_theory/516.json",
+        "problem_hash": "b189c28357bc482cf51322161c5d6e2e07d5fa93b25eeac71f6b6672aea08b91",
+        "subject": "Number Theory",
+        "level": 4
+      },
+      {
+        "id": "test/counting_and_probability/119.json",
+        "problem_hash": "fd013fb62f60a8463cabf097b5721d08d201303c0c7441e4f641c1d04245df81",
+        "subject": "Counting & Probability",
+        "level": 4
+      },
+      {
+        "id": "test/algebra/2214.json",
+        "problem_hash": "db4332188637fc32d78ffde5d3e4297c90bfd0064ff2cd298c0cb752988b9275",
+        "subject": "Algebra",
+        "level": 2
+      },
+      {
+        "id": "test/prealgebra/1742.json",
+        "problem_hash": "a226c27ffab2b3c1941d005a5edec1086aa374f6410bb0921c41daecf3457dae",
+        "subject": "Prealgebra",
+        "level": 3
+      },
+      {
+        "id": "test/prealgebra/1512.json",
+        "problem_hash": "565e362f56fe86fb2f04093dd750a0a72da10de8fa788cd816cee858fcd69c09",
+        "subject": "Prealgebra",
+        "level": 5
+      },
+      {
+        "id": "test/precalculus/697.json",
+        "problem_hash": "da4e2de97606ab58033b3e8225b5f0fc8f96fcbd2448ec99e396e4cf12b58618",
+        "subject": "Precalculus",
+        "level": 2
+      }
+    ]
+  },
+  "excluded_pilot_ids": [
+    "test/algebra/1796.json",
+    "test/counting_and_probability/14.json",
+    "test/geometry/473.json",
+    "test/intermediate_algebra/1210.json",
+    "test/number_theory/239.json",
+    "test/prealgebra/2057.json",
+    "test/precalculus/801.json",
+    "test/intermediate_algebra/1410.json"
+  ],
+  "preflight_summary_hash": "c0681f9a98b64c1385bc19275c92706ed20ca3e006cc5b1fcd1ac77647a55511",
+  "model": "deepseek-flash",
+  "temperature_solver": 0,
+  "temperature_omega": 0.7,
+  "thinking": "disabled",
+  "solver_max_tokens": 8192,
+  "omega_max_tokens": 8192,
+  "solver_input_bound": 16000,
+  "omega_input_bound": 80000,
+  "answer_contract": "Implement solve() with no arguments. Return only the final mathematical answer. For exact fractions, radicals, symbolic expressions, tuples, sets or intervals, return a Python raw string containing the exact LaTeX answer; do not replace exact values with decimal approximations. Use only Python standard library; llm/llm_batch and sympy are unavailable. Output only a fenced Python code block, without prose derivation.",
+  "scorer": "math_verify",
+  "math_verify_version": "0.8.0",
+  "max_concurrent": 1,
+  "execution_timeout": 5,
+  "max_api_retries": 0,
+  "selection": "dev accuracy; tie shallower then A first",
+  "generation": "A and B independent from identical base G traces; C from A G traces and A source",
+  "failure_policy": "no paid regeneration; invalid child falls back to A, invalid A stops; provider error stops for audit; no replacing scored outputs",
+  "budget_exhaustion": "stop and report incomplete; no mid-run cap expansion",
+  "branch_search_token_reservation_cap": 2000000,
+  "branch_search_cny_reservation_cap": 12,
+  "formal_scope_cny_reservation_cap": 41,
+  "project_cny_reservation_cap": 150,
+  "max_solver_calls": 270,
+  "max_omega_calls": 3,
+  "formal_worst_case_reserved_cny": 40.516992,
+  "prior_reserved_cny_at_freeze": 62.59619099999987,
+  "combined_worst_case_reserved_cny": 103.11318299999988,
+  "all_search_calls_including_G_AC_diagnostics_counted": true,
+  "shared_calls_counted_in_both_branches_but_once_physically": true,
+  "public_dataset_limitation": "Unseen to strategy generation/selection, not necessarily unseen in model pretraining",
+  "parent_protocol_hash": "d3c593d010f96dc56f721982cfbd11310b6efe89f2fd729aa9ded5340322c581",
+  "rerun_reason": "Reviewed upstream depth and previous_scores fix",
+  "hash": "16e81bdb77a38689219b1fb688683193caa245f6764599bd176eb20bcebe9e5f"
+}

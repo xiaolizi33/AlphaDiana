@@ -1,6 +1,6 @@
 # Metaⁿ integration and recorded experiments
 
-This fork implements the mini-project's AlphaDiana harness and A/B/C selection structure, and includes a scaled official archive-versus-flat ablation. Read [问题复盘（中文）](ISSUES_AND_LESSONS.md) and [implementation review](IMPLEMENTATION_REVIEW.md) first: review found and fixed an upstream-depth/baseline-payload discrepancy in the historical attachment generator. Historical numerical results have not been regenerated after that fix.
+This fork implements the mini-project's AlphaDiana harness and A/B/C selection structure, and includes a scaled official archive-versus-flat ablation. Read [问题复盘（中文）](ISSUES_AND_LESSONS.md) and [implementation review](IMPLEMENTATION_REVIEW.md) first: review found and fixed an upstream-depth/baseline-payload discrepancy in the historical attachment generator. The [reviewed rerun](review_rerun_20261118/README.md) now provides fresh MATH-500 and CO-Bench results after that fix, with raw records and a completion audit.
 
 ## Install
 
@@ -37,7 +37,11 @@ Tests use fake model transports and local fixtures; no API key or dataset downlo
 
 The wrapper records commands, source snapshots/hashes, complete stdout/stderr and return codes under the workspace's `experiments/debug_runs/`. API requests additionally retain request IDs, response JSON and usage. Read [experiment commands](../configs/meta_n/CORRECTED_AND_ABLATION.md) before any paid run. Set DEEPSEEK_API_KEY in the environment. The original experiments have known legacy key-file fallbacks; no key file is part of this submission.
 
-## Recorded outcomes
+## Reviewed rerun
+
+The corrected entry produced MATH-500 base 44/60 and two executions of selected A at 56/60 and 52/60. CO-Bench selected A versus A+C, scoring .664186 versus .764236 with base .832881. Both real C prompts use upstream depth 3 and verified pre-parent baseline feedback. See the [complete report and archived evidence](review_rerun_20261118/README.md).
+
+## Historical recorded outcomes
 
 |Experiment|Metric|Result|Scope|
 |---|---|---|---|

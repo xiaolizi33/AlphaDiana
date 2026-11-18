@@ -1,0 +1,26 @@
+{
+  "math500_review_20261118": {
+    "scored_rows": 270,
+    "requests": 273,
+    "ledger_requests": 273,
+    "reserved_cny": 30.991485000000015,
+    "reservation_reconciled": true,
+    "generation_audit": {
+      "upstream_depth": 3,
+      "baseline_hash_matches": true,
+      "higher_order_prompt_present": true
+    }
+  },
+  "cobench_review_20261118": {
+    "scored_rows": 27,
+    "requests": 30,
+    "ledger_requests": 30,
+    "reserved_cny": 3.8342340000000004,
+    "reservation_reconciled": true,
+    "generation_audit": {
+      "upstream_depth": 3,
+      "baseline_hash_matches": true,
+      "higher_order_prompt_present": true
+    }
+  }
+}
