@@ -1,0 +1,19 @@
+{
+  "fixed": [
+    "test/precalculus/695.json",
+    "test/intermediate_algebra/362.json",
+    "test/geometry/172.json",
+    "test/algebra/621.json",
+    "test/algebra/668.json",
+    "test/number_theory/627.json",
+    "test/intermediate_algebra/1510.json",
+    "test/prealgebra/1187.json",
+    "test/algebra/2264.json",
+    "test/number_theory/1000.json",
+    "test/algebra/1098.json",
+    "test/number_theory/516.json",
+    "test/algebra/2214.json"
+  ],
+  "regressed": [],
+  "net_correct_change": 13
+}

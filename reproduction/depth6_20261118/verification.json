@@ -1,0 +1,18 @@
+{
+  "test_rows_verified": 60,
+  "strategy_layers": 6,
+  "upstream_depth": 7,
+  "preprocess_events_verified": 360,
+  "all_preprocess_executed": true,
+  "layer_order": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2
+  ],
+  "related_tests_passed": 35,
+  "new_physical_tokens": 673056,
+  "new_reserved_cny": 28.105881
+}

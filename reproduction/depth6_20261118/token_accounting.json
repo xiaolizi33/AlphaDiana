@@ -1,0 +1,11 @@
+{
+  "new_generation_tokens": 161894,
+  "new_solver_tokens": 511162,
+  "new_total_tokens": 673056,
+  "new_reservation_cny": 28.105881000000004,
+  "request_journals": 207,
+  "failed_requests": 1,
+  "valid_strategy_draws": 4,
+  "nonaccepted_strategy_draws": 2,
+  "empty_strategy_draws": 2
+}

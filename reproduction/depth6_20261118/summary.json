@@ -1,0 +1,137 @@
+{
+  "protocol_hash": "bf3c3522c1b73fca211338ee02e5bb8413b8b706c7060bd49d0f5c0a6d0e6d9c",
+  "strategy_layers": 6,
+  "upstream_depth": 7,
+  "starting_imported_layers": 2,
+  "new_layers_generated": 4,
+  "natural_stop_strategy_layers": 3,
+  "forced_generation_started_at_layer": 4,
+  "natural_phase_root": "/Users/lsy/work/interview/experiments/math500_depth6_20261118",
+  "rounds": {
+    "0": {
+      "G": {
+        "n": 10,
+        "correct": 7,
+        "accuracy": 0.7,
+        "tokens": 5180
+      },
+      "D": {
+        "n": 20,
+        "correct": 18,
+        "accuracy": 0.9,
+        "tokens": 24078
+      }
+    },
+    "1": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 7328
+      },
+      "D": {
+        "n": 20,
+        "correct": 9,
+        "accuracy": 0.45,
+        "tokens": 21197
+      }
+    },
+    "2": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 12770
+      },
+      "D": {
+        "n": 20,
+        "correct": 16,
+        "accuracy": 0.8,
+        "tokens": 47685
+      }
+    },
+    "3": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 15018
+      },
+      "D": {
+        "n": 20,
+        "correct": 17,
+        "accuracy": 0.85,
+        "tokens": 45515
+      }
+    },
+    "4": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 17984
+      },
+      "D": {
+        "n": 20,
+        "correct": 15,
+        "accuracy": 0.75,
+        "tokens": 53867
+      }
+    },
+    "5": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 23063
+      },
+      "D": {
+        "n": 20,
+        "correct": 17,
+        "accuracy": 0.85,
+        "tokens": 61867
+      }
+    },
+    "6": {
+      "G": {
+        "n": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "tokens": 27453
+      },
+      "D": {
+        "n": 20,
+        "correct": 14,
+        "accuracy": 0.7,
+        "tokens": 67906
+      }
+    }
+  },
+  "development_best_depth": 0,
+  "test": {
+    "source_base": {
+      "n": 60,
+      "correct": 45,
+      "accuracy": 0.75,
+      "tokens": 53682
+    },
+    "depth6": {
+      "n": 60,
+      "correct": 58,
+      "accuracy": 0.9666666666666667,
+      "tokens": 174411
+    },
+    "development_best": {
+      "n": 60,
+      "correct": 45,
+      "accuracy": 0.75,
+      "tokens": 53682
+    }
+  },
+  "new_physical_tokens": 673056,
+  "new_reserved_cny": 28.105881000000004,
+  "limitations": [
+    "Natural Omega emitted no-op twice at strategy layer4 after saturated G scores; layers4..6 use an explicit nonempty-generation directive",
+    "A single chain with a previously observed test split and no new budget-matched flat control"
+  ]
+}

@@ -4,6 +4,8 @@ This fork implements the mini-project's AlphaDiana harness and A/B/C selection s
 
 The [three-search supplement](repeated_search_20261118/README.md) adds two new searches per campaign, including an invalid-strategy failure and audited infrastructure recovery. MATH completed all three runs, with mean independent/recursive accuracy .861111/.833333. CO completed two of three planned runs, with mixed recursive-minus-independent differences. The presentation now includes these repeated results.
 
+The [six-layer extension](depth6_20261118/README.md) continues the third A+C chain. Natural generation stopped after three strategy layers with two explicit no-op outputs. A labeled forced-depth continuation installed and executed layers 4–6, scoring 58/60 on T versus the saved base 45/60. Development selection still chose base (18/20 versus depth6 14/20). The full report records this distinction and the previously observed test split.
+
 ## Install
 
 Use macOS with `sandbox-exec`, Xcode Command Line Tools Python, uv and Python 3.11. Arrange the workspace as:

@@ -214,6 +214,9 @@ async def generate(protocol, name, parent, rows, branches, baseline_rows=None):
         # Explicit source attachment at all depths; preserve official Omega template.
         augmented = [{**m, "content": "## Actual solver program and installed chain\n" +
                       json.dumps(solver_program, ensure_ascii=False) + "\n\n" + m["content"]} for m in messages]
+        if protocol.get('generation_directive'):
+            augmented = [{**m, 'content': m['content'] + '\n\n## Fixed-depth experiment directive\n' +
+                          protocol['generation_directive']} for m in augmented]
         save(ROOT/"strategies"/f"{name}.request.json", augmented)
         result = await original(augmented, **kwargs)
         save(ROOT/"strategies"/f"{name}.response.json", {"response": client.response, "usage": client.usage})
