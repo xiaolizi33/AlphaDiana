@@ -2,6 +2,8 @@
 
 This fork implements the mini-project's AlphaDiana harness and A/B/C selection structure, and includes a scaled official archive-versus-flat ablation. Read [问题复盘（中文）](ISSUES_AND_LESSONS.md) and [implementation review](IMPLEMENTATION_REVIEW.md) first: review found and fixed an upstream-depth/baseline-payload discrepancy in the historical attachment generator. The [reviewed rerun](review_rerun_20261118/README.md) now provides fresh MATH-500 and CO-Bench results after that fix, with raw records and a completion audit.
 
+The [three-search supplement](repeated_search_20261118/README.md) adds two new searches per campaign, including an invalid-strategy failure and audited infrastructure recovery. MATH completed all three runs, with mean independent/recursive accuracy .861111/.833333. CO completed two of three planned runs, with mixed recursive-minus-independent differences. The presentation now includes these repeated results.
+
 ## Install
 
 Use macOS with `sandbox-exec`, Xcode Command Line Tools Python, uv and Python 3.11. Arrange the workspace as:

@@ -1,0 +1,313 @@
+{
+  "records": [
+    {
+      "campaign": "math500",
+      "repeat": 1,
+      "status": "complete",
+      "directory": "/Users/lsy/work/interview/experiments/math500_review_20261118",
+      "search_context_seed": 20261116,
+      "scores": {
+        "base": 0.7333333333333333,
+        "independent": 0.9333333333333333,
+        "recursive": 0.8666666666666667
+      },
+      "selected": {
+        "independent": "A",
+        "recursive": "A"
+      },
+      "dev_scores": {
+        "A": 0.95,
+        "B": 0.9,
+        "AC": 0.75
+      },
+      "paired_vs_base": {
+        "independent": {
+          "fixed": 12,
+          "regressed": 0
+        },
+        "recursive": {
+          "fixed": 10,
+          "regressed": 2
+        }
+      },
+      "recursive_minus_independent": -0.06666666666666665,
+      "recursive_minus_base": 0.13333333333333341,
+      "same_selected_strategy": true,
+      "physical_tokens": 409713,
+      "generation_tokens": 23559,
+      "solver_tokens": 386154,
+      "rows": 270,
+      "requests": 273,
+      "generation_audit": {
+        "depths_correct": true,
+        "baseline_hash_matches": true,
+        "shared_base_input": true,
+        "higher_order_prompt": true
+      },
+      "audited_infrastructure_failed_attempts": 0,
+      "blocked_unsent_requests": 0,
+      "protocol_hash": "16e81bdb77a38689219b1fb688683193caa245f6764599bd176eb20bcebe9e5f"
+    },
+    {
+      "campaign": "math500",
+      "repeat": 2,
+      "status": "complete",
+      "directory": "/Users/lsy/work/interview/experiments/math500_review_20261118_repeat2",
+      "search_context_seed": 20261117,
+      "scores": {
+        "base": 0.7333333333333333,
+        "independent": 0.7333333333333333,
+        "recursive": 0.75
+      },
+      "selected": {
+        "independent": "A",
+        "recursive": "A"
+      },
+      "dev_scores": {
+        "A": 0.75,
+        "B": 0.75,
+        "AC": 0.65
+      },
+      "paired_vs_base": {
+        "independent": {
+          "fixed": 5,
+          "regressed": 5
+        },
+        "recursive": {
+          "fixed": 7,
+          "regressed": 6
+        }
+      },
+      "recursive_minus_independent": 0.01666666666666672,
+      "recursive_minus_base": 0.01666666666666672,
+      "same_selected_strategy": true,
+      "physical_tokens": 307565,
+      "generation_tokens": 20090,
+      "solver_tokens": 287475,
+      "rows": 270,
+      "requests": 274,
+      "generation_audit": {
+        "depths_correct": true,
+        "baseline_hash_matches": true,
+        "shared_base_input": true,
+        "higher_order_prompt": true
+      },
+      "audited_infrastructure_failed_attempts": 1,
+      "blocked_unsent_requests": 0,
+      "protocol_hash": "59f99d6688caa32412e9d9c2b61fc0d745967eb2393974c4791d599678f149ea"
+    },
+    {
+      "campaign": "math500",
+      "repeat": 3,
+      "status": "complete",
+      "directory": "/Users/lsy/work/interview/experiments/math500_review_20261118_repeat3",
+      "search_context_seed": 20261118,
+      "scores": {
+        "base": 0.75,
+        "independent": 0.9166666666666666,
+        "recursive": 0.8833333333333333
+      },
+      "selected": {
+        "independent": "B",
+        "recursive": "A+C"
+      },
+      "dev_scores": {
+        "A": 0.45,
+        "B": 0.9,
+        "AC": 0.8
+      },
+      "paired_vs_base": {
+        "independent": {
+          "fixed": 11,
+          "regressed": 1
+        },
+        "recursive": {
+          "fixed": 11,
+          "regressed": 3
+        }
+      },
+      "recursive_minus_independent": -0.033333333333333326,
+      "recursive_minus_base": 0.1333333333333333,
+      "same_selected_strategy": false,
+      "physical_tokens": 372828,
+      "generation_tokens": 18669,
+      "solver_tokens": 354159,
+      "rows": 270,
+      "requests": 291,
+      "generation_audit": {
+        "depths_correct": true,
+        "baseline_hash_matches": true,
+        "shared_base_input": true,
+        "higher_order_prompt": true
+      },
+      "audited_infrastructure_failed_attempts": 1,
+      "blocked_unsent_requests": 17,
+      "protocol_hash": "a0708bbfd9af6a837d536ef87b18527c32e2de4cb70b014b46fb26678491b887"
+    },
+    {
+      "campaign": "cobench",
+      "repeat": 1,
+      "status": "complete",
+      "directory": "/Users/lsy/work/interview/experiments/cobench_review_20261118",
+      "search_context_seed": 20261116,
+      "scores": {
+        "base": 0.8328805347880263,
+        "independent": 0.6641864274281906,
+        "recursive": 0.7642355130301445
+      },
+      "selected": {
+        "independent": "A",
+        "recursive": "A+C"
+      },
+      "dev_scores": {
+        "A": 0.054913204841625346,
+        "B": 0.0,
+        "AC": 0.3415927138945041
+      },
+      "paired_vs_base": null,
+      "recursive_minus_independent": 0.10004908560195391,
+      "recursive_minus_base": -0.06864502175788179,
+      "same_selected_strategy": false,
+      "physical_tokens": 153671,
+      "generation_tokens": 41509,
+      "solver_tokens": 112162,
+      "rows": 27,
+      "requests": 30,
+      "generation_audit": {
+        "depths_correct": true,
+        "baseline_hash_matches": true,
+        "shared_base_input": true,
+        "higher_order_prompt": true
+      },
+      "audited_infrastructure_failed_attempts": 0,
+      "blocked_unsent_requests": 0,
+      "protocol_hash": "73fcc2567bc78047d52afb6a0023d3acf9abe136841affac55c9e304b11c9e77"
+    },
+    {
+      "campaign": "cobench",
+      "repeat": 2,
+      "status": "failed",
+      "directory": "/Users/lsy/work/interview/experiments/cobench_review_20261118_repeat2",
+      "reason": "Omega generated invalid A; original protocol stops without regeneration",
+      "requests": 4,
+      "physical_tokens": 19710
+    },
+    {
+      "campaign": "cobench",
+      "repeat": 3,
+      "status": "complete",
+      "directory": "/Users/lsy/work/interview/experiments/cobench_review_20261118_repeat3",
+      "search_context_seed": 20261118,
+      "scores": {
+        "base": 0.7375663598652588,
+        "independent": 0.7380599703923196,
+        "recursive": 0.6977486770672311
+      },
+      "selected": {
+        "independent": "B",
+        "recursive": "A+C"
+      },
+      "dev_scores": {
+        "A": 0.26970305595971855,
+        "B": 0.5228319558746112,
+        "AC": 0.6038959292004246
+      },
+      "paired_vs_base": null,
+      "recursive_minus_independent": -0.04031129332508854,
+      "recursive_minus_base": -0.039817682798027665,
+      "same_selected_strategy": false,
+      "physical_tokens": 138612,
+      "generation_tokens": 40789,
+      "solver_tokens": 97823,
+      "rows": 27,
+      "requests": 34,
+      "generation_audit": {
+        "depths_correct": true,
+        "baseline_hash_matches": true,
+        "shared_base_input": true,
+        "higher_order_prompt": true
+      },
+      "audited_infrastructure_failed_attempts": 1,
+      "blocked_unsent_requests": 3,
+      "protocol_hash": "6008da175d4a622bfe577b7a7d105cdfd885d320f8395879d05edf8eb1099d89"
+    }
+  ],
+  "aggregate": {
+    "math500": {
+      "scheduled_searches": 3,
+      "completed_searches": 3,
+      "failed_searches": 0,
+      "test_scores": {
+        "base": {
+          "mean": 0.7388888888888888,
+          "sample_sd": 0.009622504486493792
+        },
+        "independent": {
+          "mean": 0.861111111111111,
+          "sample_sd": 0.11097213530798991
+        },
+        "recursive": {
+          "mean": 0.8333333333333334,
+          "sample_sd": 0.07264831572567788
+        }
+      },
+      "recursive_minus_independent": {
+        "mean": -0.027777777777777752,
+        "sample_sd": 0.041943524640393075
+      },
+      "recursive_minus_base": {
+        "mean": 0.09444444444444448,
+        "sample_sd": 0.06735753140545632
+      },
+      "recursive_chain_selected_count": 1,
+      "same_selected_strategy_count": 2
+    },
+    "cobench": {
+      "scheduled_searches": 3,
+      "completed_searches": 2,
+      "failed_searches": 1,
+      "test_scores": {
+        "base": {
+          "mean": 0.7852234473266425,
+          "sample_sd": 0.06739729943108967
+        },
+        "independent": {
+          "mean": 0.7011231989102551,
+          "sample_sd": 0.05223648318021143
+        },
+        "recursive": {
+          "mean": 0.7309920950486878,
+          "sample_sd": 0.047013292569013675
+        }
+      },
+      "recursive_minus_independent": {
+        "mean": 0.029868896138432688,
+        "sample_sd": 0.0992497757492251
+      },
+      "recursive_minus_base": {
+        "mean": -0.054231352277954725,
+        "sample_sd": 0.020384006862076004
+      },
+      "recursive_chain_selected_count": 2,
+      "same_selected_strategy_count": 0
+    }
+  },
+  "reservation_cny_by_scope": {
+    "math500_review_20261118_repeat3": 30.752241000000016,
+    "cobench_review_20261118": 3.8342340000000004,
+    "cobench_review_20261118_repeat3": 4.008504,
+    "cobench_review_20261118_repeat2": 0.514677,
+    "math500_review_20261118": 30.991485000000015,
+    "math500_review_20261118_repeat2": 29.902842
+  },
+  "project_reserved_cny": 162.6002159999998,
+  "limitations": [
+    "Three searches on the same fixed data split",
+    "Existing run included prospectively with two new runs; results of the existing run were known",
+    "No deterministic seed sent to provider; context-sampling seeds vary",
+    "MATH test groups separately execute the selected strategy; CO reuses outputs for identical selected chains",
+    "A/B/C attachment experiment with fixed generation opportunities, not full paper evolutionary search",
+    "Different model and much smaller task coverage than the paper"
+  ],
+  "all_requests_disjoint": true
+}

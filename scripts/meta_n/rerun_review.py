@@ -11,11 +11,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--campaign', choices=['math500', 'cobench'], required=True)
     parser.add_argument('--stage', choices=['validate', 'all'], default='all')
+    parser.add_argument('--repeat-id', type=int, choices=[2, 3])
+    parser.add_argument('--project-cap-cny', type=float, default=150)
     args = parser.parse_args()
+    suffix = f'_repeat{args.repeat_id}' if args.repeat_id else ''
     if args.campaign == 'math500':
         import formal_campaign as campaign
         old_root = campaign.ROOT
-        scope = 'math500_review_20261118'
+        scope = 'math500_review_20261118' + suffix
         campaign.ROOT = old_root.with_name(scope)
         campaign.BOTH = [scope + '_independent', scope + '_recursive']
         campaign.audit_reservations = functools.partial(campaign.audit_reservations, scope=scope)
@@ -24,9 +27,13 @@ def main():
         if not protocol_path.exists():
             protocol = json.loads((old_root / 'protocol.json').read_text())
             old_hash = protocol.pop('hash')
+            if args.repeat_id:
+                protocol['split_seed'] = protocol['seed']
+                protocol['seed'] = 20261115 + args.repeat_id
+                protocol['independent_repeat'] = args.repeat_id
             protocol.update(parent_protocol_hash=old_hash,
                             rerun_reason='Reviewed upstream depth and previous_scores fix',
-                            project_cny_reservation_cap=150,
+                            project_cny_reservation_cap=args.project_cap_cny,
                             prior_reserved_cny_at_freeze=sum(
                                 row['reserved_cny'] for row in map(json.loads,
                                 (core.REPO.parent / 'experiments/budget_reservations.jsonl').read_text().splitlines())))
@@ -37,14 +44,16 @@ def main():
         original_config = core.client_config
     else:
         import cobench_corrected as campaign
-        scope = 'cobench_review_20261118'
+        scope = 'cobench_review_20261118' + suffix
         campaign.ROOT = campaign.ROOT.with_name(scope)
         campaign.BOTH = [scope + '_independent', scope + '_recursive']
+        if args.repeat_id:
+            campaign.SEARCH_SEED = 20261115 + args.repeat_id
         original_config = campaign.client_config
 
     def client_config(branches, omega=False, protocol=None):
         config = original_config(branches, omega=omega, protocol=protocol)
-        config.update(budget_scope=scope, global_cap_cny=150,
+        config.update(budget_scope=scope, global_cap_cny=args.project_cap_cny,
                       halt_file=str(campaign.ROOT / 'request_halted.json'),
                       request_log_dir=str(campaign.ROOT / 'requests'))
         return config
@@ -57,7 +66,9 @@ def main():
         'reason': 'Upstream base=1, A/B=2, C=3 with pre-parent baseline feedback',
         'historical_root': str(core.REPO.parent / 'experiments' /
                                ('math500_formal' if args.campaign == 'math500' else 'cobench_corrected')),
-        'budget_scope': scope, 'global_reservation_guard_cny': 150,
+        'budget_scope': scope, 'global_reservation_guard_cny': args.project_cap_cny,
+        'independent_repeat': args.repeat_id or 1,
+        'provider_seed_sent': False,
         'entrypoint_sha256': __import__('hashlib').sha256(Path(__file__).read_bytes()).hexdigest(),
         'policy': 'Fresh base outputs and strategies, original splits and model parameters'})
     import sys

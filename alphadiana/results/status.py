@@ -159,7 +159,7 @@ def is_legacy_timeout_zero_record(record: dict[str, Any]) -> bool:
     error = _as_dict(record.get("error"))
     explicit = str(record.get("score_status", "") or "").strip()
     if explicit in {"verifier_error", "scorer_error"} or (
-        error and _classify_error_status(error) in {"verifier_error", "scorer_error"}
+        error and _classify_error_status(error) in {"provider_error", "verifier_error", "scorer_error"}
     ):
         return False
     if explicit == VALID_SCORE_STATUS:

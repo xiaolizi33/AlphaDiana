@@ -1,0 +1,32 @@
+{
+  "campaigns": [
+    "math500",
+    "cobench"
+  ],
+  "new_repeats": [
+    2,
+    3
+  ],
+  "include_existing_repeat": 1,
+  "fixed_splits": true,
+  "search_context_seeds": [
+    20261116,
+    20261117,
+    20261118
+  ],
+  "provider_seed_sent": false,
+  "project_reservation_cap_cny": 220,
+  "max_additional_reservation_cny": 105.033984,
+  "prior_reserved_cny": 97.42191,
+  "selection_rule": "unchanged development selection; frozen T for fixed selected chain",
+  "stop_rule": "run both scheduled repeats irrespective of scores; retain failures and audit before recovery",
+  "paper_reference": "supplied 2608.24735v1.pdf, main section 3 and Appendix C Table 5",
+  "paper_repeats": [
+    42,
+    43,
+    44
+  ],
+  "paper_CO_Gemma_max_iterations": 8,
+  "paper_CO_GPT52_max_iterations": 6,
+  "scope": "two new A/B/C searches per campaign; original mini-project protocol, not full paper evolutionary search"
+}

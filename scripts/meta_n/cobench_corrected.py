@@ -20,6 +20,7 @@ ROOT=core.REPO.parent/'experiments/cobench_corrected'
 PREP=core.REPO.parent/'experiments/cobench_corrected_data'
 BOTH=['cobench_independent','cobench_recursive']
 CONTRACT=RESOURCE.prompt()
+SEARCH_SEED=20261116
 
 def freeze():
     tree=json.loads((PREP/'source_tree.json').read_text())
@@ -30,7 +31,7 @@ def freeze():
     tasks={t.metadata['task_name']:t for t in adapter.load_tasks()}
     assert len(tasks)==9
     p={'purpose':'corrected_attachment_comparison_with_fresh_task_families',
-       'dataset':'CO-Bench/CO-Bench','revision':tree['revision'],'seed':20261116,
+       'dataset':'CO-Bench/CO-Bench','revision':tree['revision'],'seed':SEARCH_SEED,
        'splits':{k:[{'id':tasks[n].task_id,'name':n,'problem':tasks[n].description,'answer':''} for n in ns] for k,ns in splits.items()},
        'files':{str(f.relative_to(PREP)):hashlib.sha256(f.read_bytes()).hexdigest() for n in tasks for f in sorted((PREP/'data'/n).iterdir()) if f.is_file()},
        'data_policy':'G/D first official file with dev indices; T first official non-dev file; task families disjoint and no synthetic instances; excluded empty-test preflight files retained separately',
